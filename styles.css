@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #adf0d4;
+  --secondary-color: #1fd8a4;
+  --bg-color: #0d1512;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  transition: 200ms;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 14px;
+}
+
+header, main, footer {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Typography */
+p {
+  font-size: 1.05em;
+}
+
+.darkerText {
+  color: var(--secondary-color);
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.h2, .darkmode {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.h2 {
+  font-size: 35px;
+}
+
+.h2:active, .darkmode:active {
+  transform: scale(0.95);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Layout */
+main, section, .nameContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  gap: 64px;
+  padding-bottom: 64px;
+	}
+
+section {
+  gap: 48px;
+}
+
+.nameContainer {
+  gap: 8px;
+}
+
+/* Stats */
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+ img {
+  width: 120px; /* Adjust size as needed */
+  height: 120px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover; /* Ensures image fills the circle */
+  border: 3px solid var(--secondary-color); /* Optional: Adds a border */
+  display: flex;
+  justify-content: center; /* Center under name */
+  margin-top: 1rem;
+
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stats > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats i {
+  font-size: 1.4em;
+}
+
+.stats div div {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+}
+
+/* About Me */
+.aboutMe {
+  line-height: 1.5em;
+  width: 80%;
+  margin-right: auto;
+}
+
+/* Outreach */
+.outreach {
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  width: fit-content;
+  margin-right: auto;
+}
+
+.outreach:hover {
+  opacity: 0.7;
+}
+
+.outreach i {
+  transform: rotate(-45deg);
+}
+
+/* Projects */
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.headerText {
+  margin-bottom: 24px;
+}
+
+.projectItem {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.projectItem div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.projectItem div:last-child {
+  aspect-ratio: 16/9;
+  max-width: 30%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.projectItem img {
+
