@@ -1,7 +1,7 @@
 :root {
   --primary-color: #adf0d4;
   --secondary-color: #1fd8a4;
-  --bg-color: #0d1512;
+  --bg-color: oklch(0.446 0.043 257.281);
 }
 
 * {
