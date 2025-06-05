@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #adf0d4;
+  --primary-color: #2a6f97;
   --secondary-color: #1fd8a4;
-  --bg-color: oklch(0.446 0.043 257.281);
+  --bg-color: 	  #212529;
 }
 
 * {
@@ -20,6 +20,13 @@ body {
   flex-direction: column;
   gap: 72px;
   padding: 14px;
+}
+
+/* Dark button*/
+body.dark {
+background-color: #111;
+color: #edf2f4; 
+
 }
 
 header, main, footer {
